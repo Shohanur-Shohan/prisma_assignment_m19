@@ -1,0 +1,22 @@
+{
+  "name": "pos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.2",
+    "jose": "^4.15.4",
+    "next": "13.5.4",
+    "nodemailer": "^6.9.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "prisma": "^5.4.2"
+  }
+}
