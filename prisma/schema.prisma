@@ -13,7 +13,7 @@ model user{
   middleName   String   @db.VarChar(100)
   lastName     String   @db.VarChar(100)
   mobile       String   @db.VarChar(50)
-  email        String   @db.VarChar(100)
+  email        String   @db.VarChar(100) @unique
   password     String   @db.VarChar(100)
   admin        Int      @db.TinyInt
   registeredAt DateTime? @default(now()) @db.Timestamp(0)
