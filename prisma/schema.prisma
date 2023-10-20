@@ -76,6 +76,7 @@ model category{
   content     String   @db.VarChar(100)
   createAt    DateTime @default(now()) @db.Timestamp(0)
   updateAt    DateTime @default(now()) @db.Timestamp(0) @updatedAt
+
 }
 
 model cart{
