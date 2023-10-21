@@ -10,11 +10,11 @@ export async function DELETE(req, res){
     try{
         const {searchParams} = new URL(req.url);
         let id = searchParams.get("id");
-        const result = await prisma.category.delete({
+        await prisma.category.delete({
             where:{id:id}
         });
 
-        return NextResponse.json({status: "success", data: result});
+        return NextResponse.json({status: "success"});
 
     }catch(error){
         return NextResponse.json({status: "Failed", error: error.toString()});
